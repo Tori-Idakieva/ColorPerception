@@ -1,0 +1,2 @@
+This application is to serve the purpose of a research tool on color and how the users percieve color.
+In addition to that the application is in the form of a game that gathers the data from the user interaction with the app. The game is a simple guess the emotion game. The user is also able to create an image with an emotion of his/hers choice from a particular set of emotions.
