@@ -74,7 +74,7 @@ const styles = {
 	},
 }
 
-Button.propTypes = {
+InputField.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.array,
     PropTypes.object,

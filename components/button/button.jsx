@@ -9,7 +9,7 @@ class Button extends React.Component {
 
 	render() {
 		const {
-			btnKind,
+			btnkind,
 			children,
 			disabled,
 			onClick,
@@ -17,10 +17,10 @@ class Button extends React.Component {
 		} = this.props;
 		return(
 			<button
-			  btnKind={btnKind}
+			  btnkind={btnkind}
 			  disabled={disabled}
 			  onClick={onClick}
-			  style={styles[btnKind]}
+			  style={styles[btnkind]}
 			  title={title}
 			>
 			{children}	
@@ -117,7 +117,7 @@ Button.propTypes = {
     PropTypes.string
   ]),
   disabled: PropTypes.bool,
-  btnKind: PropTypes.oneOf([
+  btnkind: PropTypes.oneOf([
     'cancel',
     'submit',
     'success',

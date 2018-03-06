@@ -9,18 +9,16 @@ class Image extends React.Component {
 
 	render() {
 		const {
-			btnKind,
 			children,
-			disabled,
 			onClick,
+			src,
 			title,
 		} = this.props;
 		return(
 			<div>
 				<img
-				  btnKind={btnKind}
-				  disabled={disabled}
 				  onClick={onClick}
+				  src={src}
 				  style={styles.default}
 				  title={title}
 				/>
@@ -50,14 +48,6 @@ Image.propTypes = {
     PropTypes.array,
     PropTypes.object,
     PropTypes.string
-  ]),
-  disabled: PropTypes.bool,
-  btnKind: PropTypes.oneOf([
-    'cancel',
-    'submit',
-    'success',
-    'default',
-    'transperant',
   ]),
   onClick: PropTypes.func,
   title: PropTypes.string,

@@ -2,7 +2,7 @@ import React from 'react';
 import Radium from 'radium';
 import { storiesOf, addDecorator } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import Input from './input';
+import Image from './image';
 
 addDecorator((story) => (
   <div style={{ padding: '20px' }}>
@@ -10,29 +10,9 @@ addDecorator((story) => (
   </div>
 ));
 
-storiesOf('Input', module)
-  .add('defaultText', () => (
-    <Input 
+storiesOf('Image', module)
+  .add('sampleImage', () => (
+    <Image 
       onClick={action('clicked')}
-      placeholder="Enter input here"
-      type="text"/>
-  ))
-  .add('defaultPassword', () => (
-    <Input
-      onClick={action('clicked')}
-      placeholder="Enter password here"
-      type="password"/>
-  ))
-  .add('defaultEmail', () => (
-    <Input 
-      onClick={action('clicked')}
-      placeholder="Enter email here"
-      type="email"/>
-  ))
-  .add('with tooltip', () => (
-    <Input 
-      onClick={action('clicked')}
-      placeholder="Enter input here"
-      title="See how this renders as tooltip"
-      type="text"/>
+      src='./../../images/city1.jpg'/>
   ));
