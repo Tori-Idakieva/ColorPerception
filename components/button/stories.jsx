@@ -11,15 +11,18 @@ addDecorator((story) => (
 ));
 
 storiesOf('Button', module)
-  .add('with Default', () => (
+  .add('Default', () => (
     <Button onClick={action('clicked')} btnKind="default" title='This has a tooltip'>Default</Button>
   ))
-  .add('with Primary', () => (
-    <Button onClick={action('clicked')} btnKind="primary">Primary</Button>
+  .add('Transperant', () => (
+    <Button onClick={action('clicked')} btnKind="transperant">Transperant</Button>
   ))
-  .add('with Success', () => (
+  .add('Submit', () => (
+    <Button onClick={action('clicked')} btnKind="submit">Submit</Button>
+  ))
+  .add('Success', () => (
     <Button onClick={action('clicked')} btnKind="success">Success</Button>
   ))
-  .add('with Cancel', () => (
+  .add('Cancel', () => (
     <Button onClick={action('clicked')} btnKind="cancel">Cancel</Button>
   ));
