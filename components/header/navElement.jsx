@@ -2,32 +2,25 @@ import PropTypes from 'prop-types';
 import Radium from 'radium';
 import React from 'react';
 
-class Image extends React.Component {
+class NavElement extends React.Component {
 	constructor(props) {
 		super(props);
 	}
 
 	render() {
 		const {
-			alt,
 			children,
-			clickable,
 			onClick,
-			src,
 			title,
 		} = this.props;
 		return(
-			<div>
-				<img
-				  alt={alt}
-				  clickable={clickable}
-				  onClick={onClick}
-				  src={src}
-				  style={clickable ? [styles.default, styles.clickable] : styles.default}
-				  title={title}
-				/>
-				{children}
-			</div>
+			<li
+			  onClick={onClick}
+			  style={styles.default}
+			  title={title}
+			>
+			{children}	
+			</li>
 		);
 
 	}
@@ -35,33 +28,31 @@ class Image extends React.Component {
 
 const styles = {
 	default: {
+		background: 'none',
 		borderRadius: '6px',
 		border: 'none',
-		height: '60%',
+		fontSize: '16px',
+		listStyleType: 'none',
 		padding: '5px 10px',
-		width: '60%',
-	},
-	clickable: {
 		':hover': {
-			 boxShadow: `0px 1px 4px 1px #999ea8`,
+			 background: '#999ea8',
 			 cursor: 'pointer',
 		},
-		':focus': {
-			outline: 'none',
+		':active': {
+			background: '#999ea8',
 		},
 	},
 }
 
-Image.propTypes = {
-  alt: PropTypes.string,
+NavElement.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.array,
     PropTypes.object,
     PropTypes.string
   ]),
-  clickable: PropTypes.bool,
   onClick: PropTypes.func,
+  style: PropTypes.object,
   title: PropTypes.string,
 };
 
-export default Radium(Image);
+export default Radium(NavElement);

@@ -11,8 +11,28 @@ addDecorator((story) => (
 ));
 
 storiesOf('Image', module)
-  .add('sampleImage', () => (
+  .add('not-clickable sampleImage', () => (
     <Image 
       onClick={action('clicked')}
-      src='./../../images/city1.jpg'/>
+      src='./city1.jpg'/>
+  ))
+  .add('clickable sampleImage', () => (
+    <Image 
+      clickable={true}
+      onClick={action('clicked')}
+      src='./city1.jpg'/>
+  ))
+  .add('tooltip sampleImage', () => (
+    <Image 
+      clickable={true}
+      onClick={action('clicked')}
+      src='./city1.jpg'
+      title="This image has title"/>
+  ))
+  .add('Alt sampleImage', () => (
+    <Image 
+      alt='An image of a city'
+      onClick={action('clicked')}
+      src='./city1111.jpg'
+      title="Not loading image"/>
   ));

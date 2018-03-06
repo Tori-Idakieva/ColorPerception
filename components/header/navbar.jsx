@@ -2,31 +2,25 @@ import PropTypes from 'prop-types';
 import Radium from 'radium';
 import React from 'react';
 
-class Image extends React.Component {
+import NavElement from './navElement';
+
+class Nav extends React.Component {
 	constructor(props) {
 		super(props);
 	}
 
 	render() {
 		const {
-			alt,
 			children,
-			clickable,
+			disabled,
 			onClick,
-			src,
 			title,
 		} = this.props;
 		return(
-			<div>
-				<img
-				  alt={alt}
-				  clickable={clickable}
-				  onClick={onClick}
-				  src={src}
-				  style={clickable ? [styles.default, styles.clickable] : styles.default}
-				  title={title}
-				/>
-				{children}
+			<div style={styles.navbar}>
+			  <NavElement>Home</NavElement>
+			  <NavElement>Create Emotion</NavElement>
+			  <NavElement>Guess the Emotion</NavElement>
 			</div>
 		);
 
@@ -35,13 +29,11 @@ class Image extends React.Component {
 
 const styles = {
 	default: {
+		background: `linear-gradient(0deg, #aaafb7, #eaecef)`,
 		borderRadius: '6px',
 		border: 'none',
-		height: '60%',
+		fontSize: '16px',
 		padding: '5px 10px',
-		width: '60%',
-	},
-	clickable: {
 		':hover': {
 			 boxShadow: `0px 1px 4px 1px #999ea8`,
 			 cursor: 'pointer',
@@ -52,16 +44,23 @@ const styles = {
 	},
 }
 
-Image.propTypes = {
-  alt: PropTypes.string,
+Nav.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.array,
     PropTypes.object,
     PropTypes.string
   ]),
-  clickable: PropTypes.bool,
+  disabled: PropTypes.bool,
+  btnkind: PropTypes.oneOf([
+    'cancel',
+    'submit',
+    'success',
+    'default',
+    'transperant',
+  ]),
   onClick: PropTypes.func,
+  style: PropTypes.object,
   title: PropTypes.string,
 };
 
-export default Radium(Image);
+export default Radium(Nav);
