@@ -35,7 +35,7 @@ const styles = {
 		fontSize: '16px',
 		listStyleType: 'none',
 		margin: '5%',
-		padding: '10px 10px',
+		padding: '11px 10px',
 		textAlign: 'center',
 		textDecoration: 'none',
 		':hover': {

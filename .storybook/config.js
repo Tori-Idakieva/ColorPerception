@@ -6,6 +6,7 @@ function loadStories() {
    require('./../components/header/stories.jsx');
    require('./../components/img/stories.jsx');
    require('./../components/input/stories.jsx');
+   require('./../components/form/stories.jsx');
 }
 
 configure(loadStories, module);

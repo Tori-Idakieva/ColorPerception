@@ -36,6 +36,7 @@ const styles = {
 		borderRadius: '6px',
 		border: 'none',
 		fontSize: '16px',
+		margin: '5px',
 		padding: '5px 10px',
 		':hover': {
 			 boxShadow: `0px 1px 4px 1px #999ea8`,
@@ -51,6 +52,7 @@ const styles = {
 		borderRadius: '6px',
 		border: 'none',
 		fontSize: '16px',
+		margin: '5px',
 		padding: '5px 10px',
 		':hover': {
 			 boxShadow: `0px 1px 4px 1px #999ea8`,
@@ -67,6 +69,7 @@ const styles = {
 		border: 'none',
 		color: '#f4f5f7',
 		fontSize: '16px',
+		margin: '5px',
 		padding: '5px 10px',
 		':hover': {
 			 boxShadow: `0px 1px 4px 1px #999ea8`,
@@ -83,6 +86,7 @@ const styles = {
 		border: 'none',
 		color: '#f4f5f7',
 		fontSize: '16px',
+		margin: '5px',
 		padding: '5px 10px',
 		':hover': {
 			 boxShadow: `0px 1px 4px 1px #999ea8`,
@@ -99,6 +103,7 @@ const styles = {
 		border: 'none',
 		color: '#f4f5f7',
 		fontSize: '16px',
+		margin: '5px',
 		padding: '5px 10px',
 		':hover': {
 			 boxShadow: `0px 1px 4px 1px #999ea8`,

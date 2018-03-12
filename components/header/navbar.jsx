@@ -12,16 +12,15 @@ class Nav extends React.Component {
 	render() {
 		const {
 			children,
-			disabled,
-			onClick,
 			title,
+			style,
 		} = this.props;
 		return(
-			<div style={styles.navbar}>
-			  <NavElement>Home</NavElement>
-			  <NavElement>Create Emotion</NavElement>
-			  <NavElement>Guess the Emotion</NavElement>
-			  <NavElement>Ranklist</NavElement>
+			<div style={[styles.navbar, style]}>
+			  <NavElement title='Go to the home scree'>Home</NavElement>
+			  <NavElement title='Create images by chosing an emotion'>Create Emotion</NavElement>
+			  <NavElement title='Guess the emotions represented by images'>Guess the Emotion</NavElement>
+			  <NavElement title='Check the top 10 players'>Ranklist</NavElement>
 			</div>
 		);
 
@@ -34,7 +33,7 @@ const styles = {
 		borderRadius: '6px',
 		border: 'none',
 		fontSize: '16px',
-		padding: '9px 15px',
+		padding: '10px 15px',
 		overflow: 'hidden',
 		':hover': {
 			 boxShadow: `0px 1px 4px 1px #999ea8`,
@@ -52,15 +51,6 @@ Nav.propTypes = {
     PropTypes.object,
     PropTypes.string
   ]),
-  disabled: PropTypes.bool,
-  btnkind: PropTypes.oneOf([
-    'cancel',
-    'submit',
-    'success',
-    'default',
-    'transperant',
-  ]),
-  onClick: PropTypes.func,
   style: PropTypes.object,
   title: PropTypes.string,
 };
