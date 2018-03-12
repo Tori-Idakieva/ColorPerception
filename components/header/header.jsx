@@ -2,29 +2,25 @@ import PropTypes from 'prop-types';
 import Radium from 'radium';
 import React from 'react';
 
+import Button from './../button/button';
+import Nav from './navbar';
+
 class Header extends React.Component {
 	constructor(props) {
 		super(props);
 	}
 
 	render() {
-		const {
-			btnkind,
-			children,
-			disabled,
-			onClick,
-			title,
-		} = this.props;
 		return(
-			<button
-			  btnkind={btnkind}
-			  disabled={disabled}
-			  onClick={onClick}
-			  style={styles[btnkind]}
-			  title={title}
-			>
-			{children}	
-			</button>
+			<div>
+			  <Nav></Nav>
+			  <Button
+				onClick={console.log('clicked')}
+				btnkind="transperant"
+				title='Log out of the application'>
+				 Log out
+		      </Button>
+			</div>
 		);
 
 	}

@@ -7076,14 +7076,7 @@
       "resolved": "https://registry.npmjs.org/react-icon-base/-/react-icon-base-2.1.0.tgz",
       "version": "2.1.0"
     },
-    "react-icons": {
-      "integrity": "sha512-0n4lcGqzJFcIQLoQytLdJCE0DKSA9dkwEZRYoGrIDJZFvIT6Hbajx5mv9geqhqFiNjUgtxg8kPyDfjlhymbGFg==",
-      "requires": {
-        "react-icon-base": "2.1.0"
-      },
-      "resolved": "https://registry.npmjs.org/react-icons/-/react-icons-2.2.7.tgz",
-      "version": "2.2.7"
-    },
+    "react-icons": "^2.2.7",
     "react-inspector": {
       "integrity": "sha512-SzkmYvVUJEmUBuFwGgaGOTGucUBnKXH2wWFdzatkCrawm4P85eqgYvqevHE3DGWpfXqE1pJO4d98TYUANQGCrg==",
       "requires": {

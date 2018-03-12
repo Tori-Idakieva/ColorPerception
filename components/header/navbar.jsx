@@ -21,6 +21,7 @@ class Nav extends React.Component {
 			  <NavElement>Home</NavElement>
 			  <NavElement>Create Emotion</NavElement>
 			  <NavElement>Guess the Emotion</NavElement>
+			  <NavElement>Ranklist</NavElement>
 			</div>
 		);
 
@@ -28,12 +29,13 @@ class Nav extends React.Component {
 }
 
 const styles = {
-	default: {
-		background: `linear-gradient(0deg, #aaafb7, #eaecef)`,
+	navbar: {
+		background: `linear-gradient(0deg, #d2d4d8, #eaecef)`,
 		borderRadius: '6px',
 		border: 'none',
 		fontSize: '16px',
-		padding: '5px 10px',
+		padding: '9px 15px',
+		overflow: 'hidden',
 		':hover': {
 			 boxShadow: `0px 1px 4px 1px #999ea8`,
 			 cursor: 'pointer',

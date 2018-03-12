@@ -31,15 +31,21 @@ const styles = {
 		background: 'none',
 		borderRadius: '6px',
 		border: 'none',
+		display: 'inline',
 		fontSize: '16px',
 		listStyleType: 'none',
-		padding: '5px 10px',
+		margin: '5%',
+		padding: '10px 10px',
+		textAlign: 'center',
+		textDecoration: 'none',
 		':hover': {
 			 background: '#999ea8',
 			 cursor: 'pointer',
+			 color: '#f4f5f7',
 		},
 		':active': {
 			background: '#999ea8',
+			color: '#f4f5f7',
 		},
 	},
 }

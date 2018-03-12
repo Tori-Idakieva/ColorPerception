@@ -13,10 +13,10 @@ addDecorator((story) => (
 ));
 
 storiesOf('Header components', module)
-  // .add('Header', () => (
-  //   <Header 
-  //     onClick={action('clicked')}/>
-  // ))
+  .add('Header', () => (
+    <Header 
+      onClick={action('clicked')}/>
+  ))
   .add('Navigation bar', () => (
     <Nav 
       onClick={action('clicked')}/>
