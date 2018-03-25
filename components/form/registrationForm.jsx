@@ -7,7 +7,7 @@ import FaArrowCircleRight from 'react-icons/lib/fa/arrow-circle-right';
 import Image from './../img/image'
 import Input from './../input/input';
 
-class LoginForm extends React.Component {
+class RegistrationForm extends React.Component {
 	constructor(props) {
 		super(props);
 	}
@@ -27,7 +27,7 @@ class LoginForm extends React.Component {
 				      onClick={console.log('clicked')}
 				      placeholder="Enter username"
 				      style={styles.marginTop}
-				      title='Enter a valid username'
+				      title='Enter a new username'
 				      type="username"/>
 				   </div>
 				   <div>
@@ -37,15 +37,25 @@ class LoginForm extends React.Component {
 				      onClick={console.log('clicked')}
 				      placeholder="******"
 				      style={styles.inputForm}
-				      title='Enter a valid password'
+				      title='Enter a new password'
 				      type="password"/>
+				   </div>
+                  <div>
+				  <Input
+				      label='Email:'
+				      labelExists={true}
+				      onClick={console.log('clicked')}
+				      placeholder="Enter email"
+				      style={styles.emailInput}
+				      title='abc@example.com'
+				      type="email"/>
 				   </div>
 				  <div style={styles.buttonStyle}>
 					  <Button
 						onClick={console.log('clicked')}
 						btnkind="submit"
-						title='Log in with your username and password'>
-						 Login <FaArrowCircleRight/>
+						title='Sign up as a new user'>
+						 Register <FaArrowCircleRight/>
 				      </Button>
 			      </div>
 			    </div>
@@ -108,6 +118,12 @@ const styles = {
 		display: 'grid',
 		marginTop: '15px',
 	},
+	emailInput: {
+		marginTop: '2px',
+		marginBottom: '4px',
+		marginRight: '4px',
+		marginLeft: '7.5%',
+	},
 }
 
-export default Radium(LoginForm);
+export default Radium(RegistrationForm);

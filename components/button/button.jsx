@@ -13,6 +13,7 @@ class Button extends React.Component {
 			children,
 			disabled,
 			onClick,
+			style,
 			title,
 		} = this.props;
 		return(
@@ -20,7 +21,7 @@ class Button extends React.Component {
 			  btnkind={btnkind}
 			  disabled={disabled}
 			  onClick={onClick}
-			  style={styles[btnkind]}
+			  style={[styles[btnkind],style]}
 			  title={title}
 			>
 			{children}	

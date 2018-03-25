@@ -14,8 +14,8 @@ storiesOf('Input', module)
   .add('defaultText', () => (
     <Input 
       onClick={action('clicked')}
-      placeholder="Enter input here"
-      type="text"/>
+      placeholder="Enter username here"
+      type="username"/>
   ))
   .add('defaultPassword', () => (
     <Input

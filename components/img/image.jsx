@@ -13,6 +13,7 @@ class Image extends React.Component {
 			children,
 			clickable,
 			onClick,
+			style,
 			src,
 			title,
 		} = this.props;
@@ -23,7 +24,7 @@ class Image extends React.Component {
 				  clickable={clickable}
 				  onClick={onClick}
 				  src={src}
-				  style={clickable ? [styles.default, styles.clickable] : styles.default}
+				  style={clickable ? [styles.default, styles.clickable, style] : [styles.default, style]}
 				  title={title}
 				/>
 				{children}

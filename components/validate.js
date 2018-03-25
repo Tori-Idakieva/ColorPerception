@@ -8,6 +8,9 @@ export function validateInput(type, value) {
 	else if (type === 'password' && value.length > 0) {
 		return /^[a-zA-Z0-9_-]{4,16}$/.test(value) === false;
 	}
+	else if (type === 'username' && value.length > 0) {
+		return /^[a-zA-Z0-9_-]{4,20}$/.test(value) === false;
+	}
 	else {
 		return false;
 	}
