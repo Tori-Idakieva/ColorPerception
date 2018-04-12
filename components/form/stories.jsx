@@ -5,6 +5,7 @@ import { action } from '@storybook/addon-actions';
 
 import LoginForm from './loginForm';
 import RegistrationForm from './registrationForm';
+import RadioForm from './radioForm';
 
 addDecorator((story) => (
   <div style={{ padding: '20px' }}>
@@ -18,4 +19,7 @@ storiesOf('Forms', module)
   ))
   .add('RegistrationForm', () => (
     <RegistrationForm/>
+  ))
+  .add('RadioForm', () => (
+    <RadioForm/>
   ));
