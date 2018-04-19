@@ -10,6 +10,7 @@ function loadStories() {
    require('./../components/selection/stories.jsx');
    require('./../components/answers/stories.jsx');
    require('./../components/checkbox/stories.jsx');
+   require('./../components/gallery/stories.jsx');
 }
 
 configure(loadStories, module);

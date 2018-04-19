@@ -513,7 +513,6 @@
       "resolved": "https://registry.npmjs.org/babel-code-frame/-/babel-code-frame-6.26.0.tgz",
       "version": "6.26.0"
     },
-    "babel-core": "^6.26.0",
     "babel-generator": {
       "dependencies": {
         "jsesc": {
@@ -751,16 +750,6 @@
       "resolved": "https://registry.npmjs.org/babel-helpers/-/babel-helpers-6.24.1.tgz",
       "version": "6.24.1"
     },
-    "babel-loader": {
-      "integrity": "sha512-jRwlFbINAeyDStqK6Dd5YuY0k5YuzQUvlz2ZamuXrXmxav3pNqe9vfJ402+2G+OmlJSXxCOpB6Uz0INM7RQe2A==",
-      "requires": {
-        "find-cache-dir": "1.0.0",
-        "loader-utils": "1.1.0",
-        "mkdirp": "0.5.1"
-      },
-      "resolved": "https://registry.npmjs.org/babel-loader/-/babel-loader-7.1.2.tgz",
-      "version": "7.1.2"
-    },
     "babel-messages": {
       "integrity": "sha1-8830cDhYA1sqKVHG7F7fbGLyYw4=",
       "requires": {
@@ -986,17 +975,6 @@
         "babel-template": "6.26.0"
       },
       "resolved": "https://registry.npmjs.org/babel-plugin-transform-class-constructor-call/-/babel-plugin-transform-class-constructor-call-6.24.1.tgz",
-      "version": "6.24.1"
-    },
-    "babel-plugin-transform-class-properties": {
-      "integrity": "sha1-anl2PqYdM9NvN7YRqp3vgagbRqw=",
-      "requires": {
-        "babel-helper-function-name": "6.24.1",
-        "babel-plugin-syntax-class-properties": "6.13.0",
-        "babel-runtime": "6.26.0",
-        "babel-template": "6.26.0"
-      },
-      "resolved": "https://registry.npmjs.org/babel-plugin-transform-class-properties/-/babel-plugin-transform-class-properties-6.24.1.tgz",
       "version": "6.24.1"
     },
     "babel-plugin-transform-decorators": {
@@ -1452,7 +1430,6 @@
       "resolved": "https://registry.npmjs.org/babel-preset-env/-/babel-preset-env-1.6.1.tgz",
       "version": "1.6.1"
     },
-    "babel-preset-es2015": "^6.24.1",
     "babel-preset-flow": {
       "integrity": "sha1-5xIYiHCFrpoktb5Baa/7WZgWxJ0=",
       "requires": {
@@ -1491,19 +1468,6 @@
       "resolved": "https://registry.npmjs.org/babel-preset-minify/-/babel-preset-minify-0.2.0.tgz",
       "version": "0.2.0"
     },
-    "babel-preset-react": {
-      "integrity": "sha1-umnfrqRfw+xjm2pOzqbhdwLJE4A=",
-      "requires": {
-        "babel-plugin-syntax-jsx": "6.18.0",
-        "babel-plugin-transform-react-display-name": "6.25.0",
-        "babel-plugin-transform-react-jsx": "6.24.1",
-        "babel-plugin-transform-react-jsx-self": "6.22.0",
-        "babel-plugin-transform-react-jsx-source": "6.22.0",
-        "babel-preset-flow": "6.23.0"
-      },
-      "resolved": "https://registry.npmjs.org/babel-preset-react/-/babel-preset-react-6.24.1.tgz",
-      "version": "6.24.1"
-    },
     "babel-preset-react-app": {
       "integrity": "sha512-9fRHopNaGL5ScRZdPSoyxRaABKmkS2fx0HUJ5Yphan5G8QDFD7lETsPyY7El6b7YPT3sNrw9gfrWzl4/LsJcfA==",
       "requires": {
@@ -1523,16 +1487,6 @@
       },
       "resolved": "https://registry.npmjs.org/babel-preset-react-app/-/babel-preset-react-app-3.1.1.tgz",
       "version": "3.1.1"
-    },
-    "babel-preset-stage-0": {
-      "integrity": "sha1-VkLRUEL5E4TX5a+LyIsduVsDnmo=",
-      "requires": {
-        "babel-plugin-transform-do-expressions": "6.22.0",
-        "babel-plugin-transform-function-bind": "6.22.0",
-        "babel-preset-stage-1": "6.24.1"
-      },
-      "resolved": "https://registry.npmjs.org/babel-preset-stage-0/-/babel-preset-stage-0-6.24.1.tgz",
-      "version": "6.24.1"
     },
     "babel-preset-stage-1": {
       "integrity": "sha1-dpLNfc1oSZB+auSgqFWJz7niv7A=",
@@ -8513,9 +8467,18 @@
     }
   },
   "devDependencies": {
-    "@storybook/react": "^3.3.14",
     "@storybook/addon-actions": "^3.3.14",
     "@storybook/addon-links": "^3.3.14",
-    "@storybook/addons": "^3.3.14"
+    "@storybook/addons": "^3.3.14",
+    "@storybook/react": "^3.3.14",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-react-html-attrs": "^2.1.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "webpack-dev-server": "^3.1.3"
   }
 }

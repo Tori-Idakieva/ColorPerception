@@ -16,6 +16,11 @@ storiesOf('Image', module)
       onClick={action('clicked')}
       src='./city1.jpg'/>
   ))
+  .add('not-clickable sampleImage2', () => (
+    <Image 
+      onClick={action('clicked')}
+      src='./originals/lipstick.jpg'/>
+  ))
   .add('clickable sampleImage', () => (
     <Image 
       clickable={true}

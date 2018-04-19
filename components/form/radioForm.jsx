@@ -24,30 +24,35 @@ class RadioForm extends React.Component {
 				    value='notAtAll'
 				    checked={this.state.selectedOption === 'notAtAll'}
 				    onChange={this.handleOptionChange}
-				    style={styles.inputStyle}/>
+				    style={styles.inputStyle}
+				    title='Not at all'/>
 				  <input
 				    type='radio'
 				    value='aLittleBit'
 				    checked={this.state.selectedOption === 'aLittleBit'}
 				    onChange={this.handleOptionChange}
-				    style={styles.inputStyle}/>
+				    style={styles.inputStyle}
+				    title='A little bit'/>
 				  <input
 				    type='radio'
 				    value='somewhat'
 				    checked={this.state.selectedOption === 'somewhat'}
 				    onChange={this.handleOptionChange}
-				    style={styles.inputStyle}/>
+				    style={styles.inputStyle}
+				    title='Somewhat'/>
 				  <input
 				    type='radio'
 				    value='quiteABit'
 				    checked={this.state.selectedOption === 'quiteABit'}
 				    onChange={this.handleOptionChange}
-				    style={styles.inputStyle}/>
+				    style={styles.inputStyle}
+				    title='Quite a bit'/>
 				  <input
 				    type='radio'
 				    value='completely'
 				    checked={this.state.selectedOption === 'completely'}
-				    onChange={this.handleOptionChange}/>
+				    onChange={this.handleOptionChange}
+				    title='Completely'/>
 				  <label style={styles.labelStyle}>Completely</label>
 				</form>
 			</div>
