@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import Radium from 'radium';
 import React from 'react';
-import { validateInput } from './../validate';
+import { validateInput } from './../validate.js';
 
 class InputField extends React.Component {
 	constructor(props) {

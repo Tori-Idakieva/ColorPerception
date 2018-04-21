@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import Radium from 'radium';
 import React from 'react';
 
-import Button from './../button/button';
-import FaArrowCircleRight from 'react-icons/lib/fa/arrow-circle-right';
-import Nav from './navbar';
+import { Button } from './../button/button.jsx';
+import { FaArrowCircleRight } from 'react-icons/lib/fa/arrow-circle-right';
+import { Nav } from './navbar.jsx';
 
 class Header extends React.Component {
 	constructor(props) {

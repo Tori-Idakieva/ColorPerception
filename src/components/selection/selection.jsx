@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import Radium from 'radium';
 import React from 'react';
 
-import OptionComponent from './option';
+import { OptionComponent } from './option.jsx';
 
 
 class SelectComponent extends React.Component {
