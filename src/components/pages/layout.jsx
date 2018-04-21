@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import Radium from 'radium';
 import React from 'react';
 
-import { Header } from './../header/header.jsx';
+import Header from './../header/header.jsx';
 
 class Layout extends React.Component {
 	constructor(props) {
@@ -12,7 +12,7 @@ class Layout extends React.Component {
 	render() {
 		return(
 			<div style={styles.displayStyle}>
-			  <Header />
+			  <Header/>
 			</div>
 		);
 

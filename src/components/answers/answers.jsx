@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import Radium from 'radium';
 import React from 'react';
 
-import { Answer } from './answer.jsx';
+import Answer from './answer.jsx';
 
 class Answers extends React.Component {
 	constructor(props) {

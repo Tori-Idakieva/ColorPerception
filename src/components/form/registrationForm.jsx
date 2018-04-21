@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 import Radium from 'radium';
 import React from 'react';
 
-import { Button } from './../button/button.jsx';
-import { FaArrowCircleRight } from 'react-icons/lib/fa/arrow-circle-right';
-import { Image } from './../img/image.jsx'
-import { Input } from './../input/input.jsx';
+import Button from './../button/button.jsx';
+import FaArrowCircleRight from 'react-icons/lib/fa/arrow-circle-right';
+import Image from './../img/image.jsx'
+import Input from './../input/input.jsx';
 
 class RegistrationForm extends React.Component {
 	constructor(props) {

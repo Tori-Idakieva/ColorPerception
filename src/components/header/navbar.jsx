@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import Radium from 'radium';
 import React from 'react';
 
-import { NavElement } from './navElement.jsx';
+import NavElement from './navElement.jsx';
 
 class Nav extends React.Component {
 	constructor(props) {

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import Radium from 'radium';
 import React from 'react';
 
-import { Image } from './../img/image.jsx';
+import Image from './../img/image.jsx';
 
 class Gallery extends React.Component {
   constructor(props) {

@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import Radium from 'radium';
 import React from 'react';
 
-
 class OptionComponent extends React.Component {
   constructor(props) {
     super(props);
