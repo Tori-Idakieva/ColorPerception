@@ -3,6 +3,7 @@ import Radium from 'radium';
 import React from 'react';
 
 import NavElement from './navElement.jsx';
+import Image from './../img/image.jsx';
 
 class Nav extends React.Component {
 	constructor(props) {
@@ -17,6 +18,7 @@ class Nav extends React.Component {
 		} = this.props;
 		return(
 			<div style={[styles.navbar, style]}>
+			  <Image alt='logo' isInlineImages={true} style={styles.logo} src='./../../images/logo.png' />
 			  <NavElement title='Go to the home scree'>Home</NavElement>
 			  <NavElement title='Create images by chosing an emotion'>Create Emotion</NavElement>
 			  <NavElement title='Guess the emotions represented by images'>Guess the Emotion</NavElement>
@@ -32,8 +34,9 @@ const styles = {
 		background: `linear-gradient(0deg, #d2d4d8, #eaecef)`,
 		borderRadius: '6px',
 		border: 'none',
+		display: 'inline-flex',
 		fontSize: '16px',
-		padding: '10px 15px',
+		padding: '0px 15px',
 		overflow: 'hidden',
 		':hover': {
 			 boxShadow: `0px 1px 4px 1px #999ea8`,
@@ -42,6 +45,18 @@ const styles = {
 		':focus': {
 			outline: 'none',
 		},
+	},
+	logo: {
+		height: '100%',
+		marginTop: '0px',
+		marginBottom: '0px',
+		marginRight: '5%',
+		marginLeft: '2%',
+		minHeight: '10px',
+		minWidth: '10px',
+		maxHeight: '40px',
+		maxWidth: '40px',
+		width: '60%',
 	},
 }
 

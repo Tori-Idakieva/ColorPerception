@@ -16,7 +16,7 @@ class Gallery extends React.Component {
         <Image
           {...this.props}
           clickable={true}
-          isGallery={true}
+          isInlineImages={true}
           src={imageUrl}
           style={styles.imageStyle} />
     );
@@ -31,7 +31,11 @@ class Gallery extends React.Component {
       <div
         {...this.props}
         style={[styles.default, style]}>
-          {imagesArray.map(imageUrl => this.renderImage(imageUrl))}
+        {imagesArray.length > 0 ?
+          imagesArray.map(imageUrl => this.renderImage(imageUrl))
+          :
+          <h3>You do not have any saved images</h3>
+        }
       </div>
     );
   }

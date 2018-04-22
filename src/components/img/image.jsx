@@ -12,14 +12,14 @@ class Image extends React.Component {
 			alt,
 			children,
 			clickable,
-			isGallery,
+			isInlineImages,
 			onClick,
 			style,
 			src,
 			title,
 		} = this.props;
 		return(
-			<div style={isGallery ? styles.gallery : undefined}>
+			<div style={isInlineImages ? styles.inlineImages : undefined}>
 				<img
 				  alt={alt}
 				  clickable={clickable}
@@ -52,8 +52,8 @@ const styles = {
 			outline: 'none',
 		},
 	},
-	gallery: {
-		display: 'inline',
+	inlineImages: {
+		display: 'inline-flex',
 	},
 }
 

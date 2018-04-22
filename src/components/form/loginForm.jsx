@@ -17,7 +17,7 @@ class LoginForm extends React.Component {
 			<div style={styles.container}>
 			  <div style={styles.box}>
                 <div style={styles.header}>
-                  <Image alt='logo' style={styles.logo} src='./logo.png' />
+                  <Image alt='logo' style={styles.logo} src='./../../images/logo.png' />
                 </div>
                 <div style={styles.content}>
                   <div>

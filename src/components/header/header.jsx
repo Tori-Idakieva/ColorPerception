@@ -18,7 +18,8 @@ class Header extends React.Component {
 			  <Button
 				onClick={console.log('clicked')}
 				btnkind="transperant"
-				title='Log out of the application'>
+				title='Log out of the application'
+				style={styles.buttonLogOut}>
 				 Log out <FaArrowCircleRight/>
 		      </Button>
 			</div>
@@ -28,8 +29,12 @@ class Header extends React.Component {
 }
 
 const styles = {
+	buttonLogOut: {
+		height: '100%',
+		marginTop: '1%',
+	},
 	default: {
-		width: '85%',
+		width: '90%',
 	},
 	displayStyle: {
 		display: 'flex',

@@ -3,6 +3,9 @@ import Radium from 'radium';
 import React from 'react';
 
 import Header from './../header/header.jsx';
+import Home from './home.jsx';
+import RankList from './rankList.jsx';
+import GuessGame from './guessGame.jsx';
 
 class Layout extends React.Component {
 	constructor(props) {
@@ -11,21 +14,13 @@ class Layout extends React.Component {
 
 	render() {
 		return(
-			<div style={styles.displayStyle}>
+			<div>
 			  <Header/>
+			  <GuessGame/>
 			</div>
 		);
 
 	}
-}
-
-const styles = {
-	default: {
-		width: '85%',
-	},
-	displayStyle: {
-		display: 'flex',
-	},
 }
 
 export default Radium(Layout);
